@@ -1,4 +1,4 @@
-# OpenRouter Search MCP Server
+# OpenRouter Search MCP Server NPX
 
 This is a Model Context Protocol (MCP) server designed to provide web search capabilities by leveraging the OpenRouter API.
 
