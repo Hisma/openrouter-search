@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import {
@@ -93,7 +94,7 @@ server.setRequestHandler(CallToolRequestSchema, async (request: CallToolRequest)
     }
 
     const response = await axios.post('https://openrouter.ai/api/v1/chat/completions', {
-        model: 'google/gemini-2.5-pro-exp-03-25:free:online', // Updated model name
+        model: 'google/gemini-2.5-pro-preview-03-25:online', // Updated model name
         messages: [{
           role: 'user',
           content: query
